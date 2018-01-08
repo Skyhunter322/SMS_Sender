@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- @res/layout/main.xml -->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <Button
+        android:id="@+id/btnSelectContact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickSelectContact"
+        android:text="Select a Contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etTextdemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="ContactName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSelectContact" />
+
+    <EditText
+        android:id="@+id/etContactDemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="48dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="ContactNumber"
+        app:layout_constraintStart_toStartOf="@+id/etTextdemo"
+        app:layout_constraintTop_toBottomOf="@+id/etTextdemo" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="51dp"
+        android:layout_marginTop="44dp"
+        android:text="SEND MESSAGE"
+        app:layout_constraintEnd_toEndOf="@+id/etContactDemo"
+        app:layout_constraintTop_toBottomOf="@+id/etContactDemo" />
+
+
+</android.support.constraint.ConstraintLayout>
